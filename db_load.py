@@ -105,9 +105,3 @@ def get_cdes_tools(package=None):
         info = plats.setdefault(r["platform"], {"name": r["repo"], "tags": {}})
         info["tags"].setdefault(r["tag"], {}).setdefault(r["arch"], []).append(r["file_name"])
     return data
-
-
-if __name__ == "__main__":
-    print(get_cl5v())
-    print(get_source_list())
-    print(get_softw_link())
